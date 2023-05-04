@@ -1,5 +1,5 @@
 export async function consultarPlanetas(){
-    const URL = "https://swapi.dev/api/planets/1/"
+    const URL = "https://swapi.dev/api/planets/"
 
     const PETICION = {
         method: "GET"

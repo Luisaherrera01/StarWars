@@ -2,9 +2,11 @@ import { consultarPlanetas } from "../services/servicioConsultar.js"
 
 let fila = document.querySelector("#fila")
 
-consultarPlanetas().then(function(respuesta){
+consultarPlanetas()
+.then(function(respuesta){
+    console.log(respuesta)
 
-    respuesta.planets.forEach(function(planeta){
+   respuesta.results.forEach(function(planeta){
 
         let columna = document.createElement("div")
         columna.classList.add("col")
