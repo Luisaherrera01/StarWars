@@ -9,20 +9,26 @@ consultarPlanetas()
    respuesta.results.forEach(function(planeta){
 
         let columna = document.createElement("div")
-        columna.classList.add("col")
+        columna.classList.add("col","mb-3")
 
         let tarjeta = document.createElement("div")
         tarjeta.classList.add("card","h-100","shadow")
 
-        let nombre = document.createElement("h1")
+        let nombre = document.createElement("h4")
         nombre.classList.add("text-center", "fw-bold")
         nombre.textContent=planeta.name
 
-        let clima = document.createElement("h4")
-        clima.classList.add("test-center")
-        clima.textContent=clima.climate
+        let clima = document.createElement("p")
+        clima.classList.add("text-right","p-2", "pb-0")
+        clima.innerHTML = "Clima: "+ planeta.climate
+
+        let terreno = document.createElement("p")
+        terreno.classList.add("text-right","p-2", "pb-0")
+        terreno.innerHTML = "Terreno: " + planeta.terrain
+        
 
             tarjeta.appendChild(nombre)
+            tarjeta.appendChild(terreno)
             tarjeta.appendChild(clima)
             columna.appendChild(tarjeta)
             fila.appendChild(columna)
