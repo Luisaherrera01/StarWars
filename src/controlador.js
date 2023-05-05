@@ -20,11 +20,11 @@ consultarPlanetas()
 
         let clima = document.createElement("p")
         clima.classList.add("text-right","p-2", "pb-0")
-        clima.innerHTML = "Clima: "+ planeta.climate
+        clima.innerHTML = "<strong>Clima: </strong>"+ planeta.climate
 
         let terreno = document.createElement("p")
         terreno.classList.add("text-right","p-2", "pb-0")
-        terreno.innerHTML = "Terreno: " + planeta.terrain
+        terreno.innerHTML = "<strong>Terreno: </strong>" + planeta.terrain
         
 
             tarjeta.appendChild(nombre)
