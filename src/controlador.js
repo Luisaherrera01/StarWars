@@ -1,5 +1,5 @@
 import { consultarPlanetas } from "../services/servicioConsultar.js"
-import { consultarEspecies } from "../services/servicioConsultar.js"
+import { consultarEspecies } from "../services/servicioConsultarEspecie.js"
 
 
 let fila = document.querySelector("#fila")
